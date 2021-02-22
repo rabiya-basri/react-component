@@ -3,7 +3,7 @@ import { Header } from "./headecomponent";
 import { Age, Weight, Status } from "./numbercomponent";
 
 let currentYear = 2021;
-let birthYear = 1990;
+let birthYear = 1995;
 const age = currentYear - birthYear;
 const gravity = 9.81;
 const mass = 75;
