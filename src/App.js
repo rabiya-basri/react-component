@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Header } from "./headecomponent";
-import { Age, Weight, Status } from "./numbercomponent";
+import { Age, Weight, Status, Skills } from "./numbercomponent";
 
 let currentYear = 2021;
 let birthYear = 1995;
@@ -16,6 +16,7 @@ class App extends Component {
         <Age age={age} />
         <Weight weight={gravity * mass} />
         <Status status={status} />
+        <Skills skills={["HTML", "CSS", "JS"]} />
       </div>
     );
   }
