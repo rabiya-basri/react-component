@@ -10,3 +10,7 @@ export const Status = (props) => {
   let agestatus = props.status ? "old enough to drive" : "to young to drive";
   return <div className="status-wrapper">{agestatus}</div>;
 };
+export const Skills = (props) => {
+  const skillslist = props.skills.map((skill) => <li key={skill}>{skill}</li>);
+  return <div className="skill-wrapper">{skillslist}</div>;
+};
