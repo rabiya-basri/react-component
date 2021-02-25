@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Header } from "./headecomponent";
 import { Age, Weight, Status, Skills, ObjHeader } from "./numbercomponent";
+import { Button } from "./functionalcomponent";
 
 let currentYear = 2021;
 let birthYear = 1995;
@@ -12,6 +13,9 @@ const data = {
   welcome: "hello object",
   objTitle: "welcome object"
 };
+const sayHi = () => {
+  alert("hey");
+};
 class App extends Component {
   render() {
     return (
@@ -22,6 +26,7 @@ class App extends Component {
         <Status status={status} />
         <Skills skills={["HTML", "CSS", "JS"]} />
         <ObjHeader data={data} />
+        <Button text="say hello function" onClick={sayHi} />
       </div>
     );
   }
