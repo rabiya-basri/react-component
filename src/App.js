@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Header } from "./headecomponent";
 import { Age, Weight, Status, Skills, ObjHeader } from "./numbercomponent";
-import { Button } from "./functionalcomponent";
+import { Button, ShowDate } from "./functionalcomponent";
 
 let currentYear = 2021;
 let birthYear = 1995;
@@ -14,7 +14,10 @@ const data = {
   objTitle: "welcome object"
 };
 const sayHi = () => {
-  alert("hey");
+  alert("hey,welcomr to react functional component");
+};
+const handleTime = () => {
+  alert(ShowDate(new Date()));
 };
 class App extends Component {
   render() {
@@ -27,6 +30,7 @@ class App extends Component {
         <Skills skills={["HTML", "CSS", "JS"]} />
         <ObjHeader data={data} />
         <Button text="say hello function" onClick={sayHi} />
+        <Button text="show time" onClick={handleTime} />
       </div>
     );
   }
