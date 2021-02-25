@@ -14,3 +14,11 @@ export const Skills = (props) => {
   const skillslist = props.skills.map((skill) => <li key={skill}>{skill}</li>);
   return <div className="skill-wrapper">{skillslist}</div>;
 };
+export const ObjHeader = (props) => {
+  return (
+    <div className="object-wrapper">
+      <h1>{props.data.welcome}</h1>
+      <h2>{props.data.objTitle}</h2>
+    </div>
+  );
+};
